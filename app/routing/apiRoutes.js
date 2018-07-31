@@ -7,7 +7,20 @@ module.exports = function(app) {
     });
 
     app.post('/api/friends',function (req,res) {
-            friendData.push(req.body);
+        console.log(req.body);
+        var userDataScores = req.body;
+        console.log(userDataScores);
+        // extract scores of friendData
+        // loop through friendData scores and userDataScores generating delta at each question
+        // throw sum of deltas into array
+        // determine index of smallest delta Math.min.apply(null, arr);
+        // use index of smallest delta to determine matched friend.
+        // return picture and and name of closets match
+
+        
+        
+        
+        friendData.push(req.body);
         
     });
 }
